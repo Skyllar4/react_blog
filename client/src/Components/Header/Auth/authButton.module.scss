@@ -1,0 +1,23 @@
+@import '/src/style/vars.scss';
+
+.auth_btn {
+    @include app-btn;
+
+    &:hover {
+        background-color: $buttonColor;
+    }
+
+    &__user_name {
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    &__user_contaiiner {
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        color: black;
+    }
+
+}

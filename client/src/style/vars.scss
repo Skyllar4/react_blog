@@ -1,0 +1,46 @@
+$appColor: rgba(221, 163, 78, 0.319);
+$buttonColor: darken($appColor, 20%);
+$inputColor: rgb(192, 192, 192);
+$shadowContainers: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+@mixin app-btn {
+    border: none;
+    font-size: 16px;
+    padding: 6px 57px;
+    color: white;
+    background-color: transparent;
+    border-radius: 16px;
+    border: 1px solid $buttonColor;
+    transition: background-color 0.3s ease-in-out;
+}
+
+@mixin middle-position { // для выравнивания элементов по центру во flex контейнерах
+    display: flex;
+    align-items: center;
+}
+
+@mixin input-active-event {
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+@mixin app-input {
+    background-color: $inputColor;
+    // color: darken($color: $inputColor, $amount: 30%);
+    color: rgb(36, 33, 33);
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    padding: 9px 24px;
+    outline: none;
+    transition: background-color, box-shadow 0.5s ease-in-out;
+
+    &:hover {
+        @include input-active-event;
+    }
+
+    &:focus {
+        @include input-active-event;
+    }
+
+}

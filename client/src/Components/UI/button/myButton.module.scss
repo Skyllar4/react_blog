@@ -1,0 +1,6 @@
+@import '/src/style/vars.scss';
+
+.custom_btn {
+    @include app-btn;
+    background-color: $appColor;
+}

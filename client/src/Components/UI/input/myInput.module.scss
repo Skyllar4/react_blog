@@ -1,0 +1,5 @@
+@import '/src/style/vars.scss';
+
+.custom_input {
+    @include app-input;
+}

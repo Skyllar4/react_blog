@@ -1,0 +1,48 @@
+@import '/src/style/vars.scss';
+
+.post_container {
+    max-width: 100%;
+    margin-top: 10px;
+    box-shadow: $shadowContainers;
+    margin-bottom: 30px;
+    padding: 15px;
+    cursor: pointer;
+
+    &__post_header {
+        @include middle-position;
+        justify-content: space-between;
+    }
+
+    &__author_container {
+        @include middle-position;
+    }
+
+    &__title {
+        font-weight: 900;
+        line-height: 45px;
+        margin: 20px 0;
+        font-size: 32px;
+    }
+
+    &__content {
+        margin: 20px 0;
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+    &__post_image {
+        width: 100%;
+    }
+
+    &__author_title {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    &__footer_conteiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,22 @@
+@import '/src/style/vars.scss';
+
+.create_post_container {
+    box-shadow: $shadowContainers;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+
+    &__title {
+        font-size: 48px;
+    }
+
+    &__text_title {
+        font-size: 24px;
+    }
+
+    &__text_elements {
+        display: block;
+        margin: 20px auto;
+    }
+
+}
